@@ -107,6 +107,10 @@ async def on_message(message):
       await message.channel.purge(limit = 1)
       await message.channel.send("**"+smsg+"**")
 
+  if (msg == "安可"):
+    if (message.author.id == 594786840234688513):
+      await message.add_reaction("<a:Sui_loading_gif:759094512043032587>")
+
   #ss! (#頻道) // (想發的信息)
   if msg.startswith("ss!"):
     #channeltestingA = client.get_channel(757577056023478353)
